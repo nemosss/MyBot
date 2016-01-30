@@ -150,7 +150,7 @@ Func DetectRunningAndroid()
 
 	Local $i, $CurrentConfig = $AndroidConfig
     $SilentSetLog = True
-	For $i = 0 To UBound($AndroidAppConfig) - 1
+	For $i = 1 To UBound($AndroidAppConfig) - 1
 	  $AndroidConfig = $i
 	  If UpdateAndroidConfig() Then
 		 ; this Android is installed
