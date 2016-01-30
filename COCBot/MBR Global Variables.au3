@@ -91,10 +91,10 @@ Global $__MEmu_PhoneLayout = "0"
 ;   0            |1               |2                       |3                                 |4            |5                  |6                   |7                  |8                   |9             |10               |11
 ;   $Android     |$AndroidInstance|$Title                  |$AppClassInstance                 |$AppPaneName |$AndroidClientWidth|$AndroidClientHeight|$AndroidWindowWidth|$AndroidWindowHeight|$ClientOffsetY|$AndroidAdbDevice|$AndroidSupportsBackgroundMode
 Global $AndroidAppConfig[4][12] = [ _
-   ["BlueStacks", "",              "BlueStacks App Player","[CLASS:BlueStacksApp; INSTANCE:1]","_ctl.Window",$DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 48,$DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 48,0,             "emulator-5554",  True], _
-   ["BlueStacks2","",              "BlueStacks ",          "[CLASS:BlueStacksApp; INSTANCE:1]","_ctl.Window",$DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 48,$DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 48,0,             "emulator-5554",  True], _
-   ["Droid4X",    "droid4x",       "Droid4X 0.",           "[CLASS:subWin; INSTANCE:1]",       "",           $DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 48,$DEFAULT_WIDTH + 10,$DEFAULT_HEIGHT + 50,0,             "127.0.0.1:26944",False], _
-   ["MEmu",       "MEmu",          "MEmu 2.",              "[CLASS:subWin; INSTANCE:1]",       "",           $DEFAULT_WIDTH,     $DEFAULT_HEIGHT - 12,$DEFAULT_WIDTH + 51,$DEFAULT_HEIGHT + 24,0,             "127.0.0.1:21503",False] _
+   ["BlueStacks" ,""              ,"BlueStacks App Player"    ,"[CLASS:BlueStacksApp; INSTANCE:1]","_ctl.Window",$DEFAULT_WIDTH     ,$DEFAULT_HEIGHT     ,$DEFAULT_WIDTH     ,$DEFAULT_HEIGHT     ,0             ,"emulator-5554"  ,True ], _ ; BlueStacks 0.9.x - 0.10.x (set registry to 860x720)
+   ["BlueStacks2",""              ,"BlueStacks App Player"	  ,"[CLASS:BlueStacksApp; INSTANCE:1]","_ctl.Window",$DEFAULT_WIDTH     ,$DEFAULT_HEIGHT - 48,$DEFAULT_WIDTH +6  ,$DEFAULT_HEIGHT - 26,0             ,"127.0.0.1:5555" ,True ], _ ; BlueStacks 2.x
+   ["Droid4X"    ,"droid4x"       ,"Droid4X "                 ,"[CLASS:subWin; INSTANCE:1]"       ,""           ,$DEFAULT_WIDTH     ,$DEFAULT_HEIGHT - 48,$DEFAULT_WIDTH + 10,$DEFAULT_HEIGHT + 50,0             ,"127.0.0.1:26944",False], _ ; Droid4X 0.8.6 Beta
+   ["MEmu"       ,""              ,"MEmu "                    ,"[CLASS:subWin; INSTANCE:1]"       ,""           ,$DEFAULT_WIDTH     ,$DEFAULT_HEIGHT - 12,0                  ,0                   ,0             ,"127.0.0.1:21503",False]  _ ; Droid4X 0.8.6 Beta
 ]
 Global $FoundRunningAndroid = False
 Global $FoundInstalledAndroid = False
